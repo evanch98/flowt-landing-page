@@ -8,9 +8,7 @@
   "globals": {
     "React": "readonly"
   },
-  "plugins": [
-    "prettier"
-  ],
+  "plugins": ["prettier"],
   "rules": {
     "no-unused-vars": "error",
     "no-console": "warn",
