@@ -1,3 +1,5 @@
+'use client';
+
 import { Line } from '@/components/header/sliding-tabs/line';
 import { Tab } from '@/components/header/sliding-tabs/tab';
 import { useState } from 'react';
