@@ -1,9 +1,16 @@
 {
-  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:storybook/recommended"
+  ],
   "globals": {
     "React": "readonly"
   },
-  "plugins": ["prettier"],
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
     "no-unused-vars": "error",
     "no-console": "warn",
