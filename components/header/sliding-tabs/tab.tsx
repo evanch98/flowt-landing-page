@@ -24,7 +24,7 @@ export const Tab = ({ children, setPosition }: TabProps) => {
     <li
       ref={ref}
       onMouseEnter={handleOnMouseEnter}
-      className="flex cursor-pointer flex-col"
+      className="flex cursor-pointer flex-col text-buttonM"
     >
       {children}
     </li>
