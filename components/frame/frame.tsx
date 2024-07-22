@@ -29,7 +29,7 @@ export const Frame = ({ imgSrc, size, className }: FrameProps) => {
   return (
     <motion.div
       initial="hidden"
-      animate="visible"
+      whileInView="visible"
       viewport={{ once: true }}
       variants={variant}
       className={cn(
