@@ -13,7 +13,7 @@ export const PrimaryButton = ({
   return (
     <button
       className={cn(
-        'group rounded-full bg-white p-3 transition-colors delay-100 duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:bg-neutral-800',
+        'group rounded-full bg-white p-3 transition-colors delay-100 duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:bg-white/10',
         className,
       )}
       {...props}
