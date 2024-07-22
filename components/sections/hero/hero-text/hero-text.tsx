@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 
 interface HeroTextProps {
   className?: string;
+  title: string;
+  subtitle: string;
+  desc: string;
 }
 
 const h1Variant = {
@@ -23,7 +26,7 @@ const h1Variant = {
 const h2Variant = {
   hidden: {
     opacity: 0,
-    x: '-100%',
+    x: '-50%',
   },
   visible: {
     opacity: 1,
@@ -51,11 +54,16 @@ const descVariant = {
   },
 };
 
-export const HeroText = ({ className }: HeroTextProps) => {
+export const HeroText = ({
+  className,
+  title,
+  subtitle,
+  desc,
+}: HeroTextProps) => {
   return (
     <motion.div
       initial="hidden"
-      animate="visible"
+      whileInView="visible"
       viewport={{ once: true }}
       className={cn(
         'flex flex-col gap-y-6 text-center lg:text-left',
@@ -67,22 +75,20 @@ export const HeroText = ({ className }: HeroTextProps) => {
           variants={h1Variant}
           className="text-h2 md:text-h1"
         >
-          App Builder
+          {title}
         </motion.h1>
         <motion.h2
           variants={h2Variant}
           className="text-h5 md:text-h4"
         >
-          For iOS & Android
+          {subtitle}
         </motion.h2>
       </div>
       <motion.p
         variants={descVariant}
         className="text-bodyM md:text-bodyL"
       >
-        Our powerful app builder will help you build your desired app in minutes
-        without coding knowledge and once your app is ready, you can publish it
-        on Google Play and App Store.
+        {desc}
       </motion.p>
     </motion.div>
   );
