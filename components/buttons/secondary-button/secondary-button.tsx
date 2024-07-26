@@ -18,7 +18,7 @@ export const SecondaryButton = ({
       className={cn('group rounded-full p-3', className)}
       {...props}
     >
-      <div className="relative mx-2 overflow-hidden text-buttonM">
+      <div className="relative mx-2 overflow-hidden text-sm font-medium md:text-base">
         <p className="flex text-white duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:translate-y-[-24px]">
           {Icon && <Icon className="size-6 text-white" />}
           <span className="px-2">{children}</span>

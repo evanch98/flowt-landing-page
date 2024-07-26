@@ -18,7 +18,7 @@ export const OutlineButton = ({
       )}
       {...props}
     >
-      <div className="relative mx-4 overflow-hidden text-buttonM">
+      <div className="relative mx-4 overflow-hidden text-sm font-medium md:text-base">
         <p className="text-white duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:translate-y-[-20px]">
           {children}
         </p>
