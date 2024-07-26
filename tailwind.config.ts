@@ -44,7 +44,7 @@ const config: Config = {
         900: '#18181B',
       },
       white: '#FFFFFF',
-      black: '#000000',
+      black: '#18181B',
     },
   },
   plugins: [],
