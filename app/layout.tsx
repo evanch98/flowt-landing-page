@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { Rubik } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/header/navbar/navbar';
 import { cn } from '@/lib/utils';
 
-const font = Rubik({ subsets: ['latin'] });
+const font = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'flowt | App Builder',
