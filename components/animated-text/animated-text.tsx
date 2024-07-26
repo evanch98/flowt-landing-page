@@ -22,7 +22,7 @@ export const AnimatedText = ({ children }: AnimatedTextProps) => {
       initial="hidden"
       whileInView="animate"
       className="relative text-5xl font-medium uppercase md:text-7xl lg:text-8xl"
-      viewport={{ margin: '-25% 0%' }}
+      viewport={{ once: true, margin: '-25% 0%' }}
     >
       {children}
     </motion.h1>
