@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <footer className="flex w-full flex-col items-center justify-center">
       <div className="flex w-full max-w-7xl flex-col px-4 xl:px-8">
-        <div className="grid grid-cols-1 gap-6 py-8 md:grid-cols-3 md:gap-12 lg:grid-cols-6 lg:py-16">
+        <div className="grid grid-cols-1 gap-6 py-8 sm:grid-cols-3 sm:gap-12 lg:grid-cols-6 lg:py-16">
           <FooterColumn
             title="Categories"
             links={[
@@ -53,7 +53,7 @@ export const Footer = () => {
             <p className="cursor-pointer hover:underline">Privacy Policy</p>
             <p className="cursor-pointer hover:underline">Manage Cookies</p>
           </div>
-          <div className="flex flex-col gap-y-8 sm:flex-row sm:items-center md:gap-x-8">
+          <div className="flex flex-col gap-y-8 sm:flex-row sm:items-center sm:gap-x-8">
             <div className="flex gap-x-4">
               <SiYoutube className="size-4 cursor-pointer transition hover:text-white/75" />
               <CgFacebook className="size-4 cursor-pointer transition hover:text-white/75" />
