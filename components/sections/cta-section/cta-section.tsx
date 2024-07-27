@@ -3,7 +3,7 @@ import { PrimaryButton } from '@/components/buttons/primary-button/primary-butto
 
 export const CtaSection = () => {
   return (
-    <section className="flex h-full w-full flex-col items-center justify-center bg-neutral-700 py-8 md:py-16">
+    <section className="flex h-full w-full flex-col items-center justify-center bg-neutral-700">
       <div className="flex w-full max-w-7xl flex-col items-center justify-center gap-y-8 px-4 py-8 md:gap-y-16 md:py-16 xl:px-8">
         <div className="flex flex-col gap-y-3 text-center text-5xl font-medium md:text-7xl lg:text-8xl">
           <AnimatedText>Launch</AnimatedText>
